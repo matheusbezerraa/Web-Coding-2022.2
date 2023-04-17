@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Posicionamento estático, relativo, absoluto e fixo</title>
+    <style>
+        #principal{
+            font: 16px arial, helvetica, sans-serif;
+            text-align: justify;
+            line-height: 1.5;
+            margin: 10px;
+            padding: 5px;
+            width: 700px;;
+            height: 1700px;
+        }
+
+        #exemplo{
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="principal">
+        <!--Início da div principal-->
+        <div>
+            <!--Início posicionamento estático-->
+            <h2>Posicionamento estático</h2>
+
+            <p>
+                Estático (<em>static</em>) é o valor padrão de posicionamento.
+                Os blocos permanecem onde estão.
+            </p>
+        </div>
+        <!--Fim posicionamento estático-->
+
+        <br>
+
+        <div>
+            <!--Início posicionamento relativo-->
+            <h2>Posicionamento relativo</h2>
+
+            <p>
+                No posicionamento relativo, o bloco sai de sua posição inicial e
+                é movimentado de acordo com o valor associado ao atributo (top,
+                right, bottom, left). O espaço inicial que era ocupado pelo bloco
+                é preservado.
+            </p>
+        </div>
+        <!--Fim posicionamento relativo-->
+
+        <br>
+
+        <div>
+            <!--Início posicionamento absoluto-->
+            <h2>Posicionamento absoluto</h2>
+
+            <p>
+                No posicionamento absoluto, o bloco movido sai de sua posição original e
+                o espeço inicial que era ocupado por este bloco é ocupado pelo bloco seguinte.
+            </p>
+        </div>
+        <!--Fim posicionamento absoluto-->
+
+        <br>
+
+        <div>
+            <!--Início posicionamento fixo-->
+            <h2>Posicionamento fixo</h2>
+
+            <p>
+                No posicionamento fixo, o bloco é posicionado de forma fixa em
+                relação a uma referência.
+            </p>
+        </div>
+        <!--Fim posicionamento fixo-->
+
+        <hr>
+        <br>
+
+        <p id="exemplo">
+            Para exemplos, <a href="33-posicionamento-est-rel-abs-fix-exemplo.html">clique aqui</a> e 
+            inspecione a página (Ctrl+Shift+i).
+        </p>
+    </div>
+    <!--Fim da div principal-->
+
+</body>
+
+</html>

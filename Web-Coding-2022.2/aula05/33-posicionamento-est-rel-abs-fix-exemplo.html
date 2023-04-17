@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Posicionamento estático, relativo, absoluto e fixo</title>
+    <style>
+        #principal {
+            background-color: rgb(158, 151, 151);
+            font: 16px arial, helvetica, sans-serif;
+            text-align: justify;
+            line-height: 1.5;
+            margin: 10px auto;
+            padding: 5px;
+            width: 700px;
+            ;
+            height: 1700px;
+        }
+
+        #estatico {
+            background-color: rgb(238, 238, 172);
+            margin: 10px 10px 10px 10px;
+            height: 100px;
+        }
+
+        #relativo {
+            background-color: rgb(174, 174, 236);
+            margin: 10px 10px 10px 10px;
+            position: relative;
+            /*top - right - bottom - left*/
+            top: 50px;
+            right: 50px;
+        }
+
+        #absoluto {
+            background-color: rgb(166, 238, 166);
+            margin: 10px 10px 10px 10px;
+            position: absolute;
+            top: 0px;
+
+        }
+
+        #fixo {
+            background-color: rgb(241, 173, 173);
+            margin: 10px 10px 10px 10px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+
+        #voltar {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="principal">
+
+        <div style="border: 2px solid rgb(245, 245, 174);">
+            <!--Início da div principal-->
+            <div id="estatico">
+                <!--Início posicionamento estático-->
+                <h2>Posicionamento estático</h2>
+
+                <p>
+                    Estático (<em>static</em>) é o valor padrão de posicionamento.
+                    Os blocos permanecem onde estão.
+                </p>
+            </div>
+            <!--Fim posicionamento estático-->
+        </div>
+
+
+        <br>
+
+        <div style="border: 2px solid rgb(148, 148, 238);">
+            <div id="relativo">
+                <!--Início posicionamento relativo-->
+                <h2>Posicionamento relativo</h2>
+
+                <p>
+                    Neste exemplo o bloco será movimentado 50px a partir do topo e 
+                    50 px a partir da direita pela combinação do atributo position com 
+                    o seu deslocamento:<br>
+                    <br>
+
+                    <em>
+                        #relativo{<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;position: relative;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;top: 50px;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;right: 50px;<br>
+                        }
+                    </em>
+                </p>
+            </div>
+            <!--Fim posicionamento relativo-->
+        </div>
+
+
+        <br>
+
+        <div style="border: 2px solid rgb(190, 241, 190);">
+            <div id="absoluto">
+                <!--Início posicionamento absoluto-->
+                <h2>Posicionamento absoluto</h2>
+
+                <p>
+                    Neste exemplo o elemento de posição absoluta sai do seu fluxo normal do 
+                    documento e não afeta a posição dos outros elementos da página. Essa posição´
+                    é calculada em relação ao container onde está contido.<br>
+                    <br>
+
+                    <em>
+                        #absoluto{<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;position: absolute;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;top: 0px;<br>
+                        }
+                    </em>
+                </p>
+            </div>
+            <!--Fim posicionamento absoluto-->
+
+        </div>
+
+        <br>
+
+        <div style="border: 2px solid rgb(245, 195, 195);">
+            <div id="fixo">
+                <!--Início posicionamento fixo-->
+                <h2>Posicionamento fixo</h2>
+
+                <p>
+                    Neste exemplo, o elemento ficará fixo em relação à janela do navegador.<br>
+                    <br>
+
+                    <em>
+                        #fixo{<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;position: fixed;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;top: 0px;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;left: 0px;<br>
+                        }
+                    </em>
+                </p>
+            </div>
+            <!--Fim posicionamento fixo-->
+        </div>
+
+
+        <hr>
+        <br>
+
+        <p id="voltar">
+            <a href="32-posicionamento-est-rel-abs-fix-css.html">Voltar</a>
+        </p>
+    </div>
+    <!--Fim da div principal-->
+
+</body>
+
+</html>

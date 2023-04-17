@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elementos inline - block</title>
+    <style>
+        #inline {
+            font: 32px monospace;
+            background: rgb(211, 211, 15);
+            color: white;
+            padding: 10px 10px 10px 10px;
+        }
+
+        #block {
+            font: 32px monospace;
+            background: rgb(54, 180, 54);
+            color: white;
+            padding: 10px 10px 10px 10px;
+        }
+
+        #inline-para-block {
+            font: 32px monospace;
+            background: rgb(211, 211, 15);
+            color: white;
+            padding: 10px 10px 10px 10px;
+            display: block;
+        }
+
+        #block-para-inline {
+            font: 32px monospace;
+            background: rgb(54, 180, 54);
+            color: white;
+            padding: 10px 10px 10px 10px;
+            display: inline;
+        }
+
+        #lista {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        #lista-desordenada {
+            color: #FFF;
+            display: inline-block;
+        }
+
+        #item-lista-primeiro {
+            background-color: #FAA116;
+        }
+
+        #item-lista-segundo {
+            background-color: #57C7C3;
+        }
+
+        #item-lista-terceiro {
+            background-color: #3B97D3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <!--Início elemento inline-->
+        <h2>Elemento inline</h2>
+
+        <p>
+            Sua largura ocupa apenas o tamanho do conteúdo elemento. Ficam um ao lado do outro
+            <br>
+            Exemplo:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;a&gt;, &lt;span&gt; e &lt;img&gt;
+            <br>
+            <br>
+
+            <span id="inline">ELEMENTO INLINE - SPAN</span>
+        </p>
+
+        <br>
+        <p>
+            Podemos transformar um elemento de comportamento em inline para block usando: <br>
+            <em>display: block</em>
+            <br>
+            <br>
+            <span id="inline-para-block">ELEMENTO INLINE -> BLOCK (SPAN)</span>
+
+
+        </p>
+    </div>
+    <!--Fim elemento inline-->
+
+    <div>
+        <!--Início elemento block-->
+        <h2>Elemento block</h2>
+
+        <p>
+            Sua largura ocupa todo o espaçamento da tela e ficam um abaixo do outro.
+            <br>
+            Exemplo:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;, &lt;p&gt; e &lt;table&gt;
+
+            <br>
+            <br>
+
+        <h1 id="block">ELEMENTO BLOCK- H1</h1>
+        </p>
+
+        <br>
+
+        <p>
+            Podemos transformar um elemento de comportamento em block para inline usando: <br>
+            <em>display: inline</em>
+
+        <h1 id="block-para-inline">ELEMENTO BLOCK -> INLINE (H1)</h1>
+
+
+        </p>
+    </div>
+    <!--Fim elemento block-->
+
+    <div>
+        <!--Início elemento inline-block-->
+        <h2>Elemento inline-block</h2>
+
+        <p>
+            Comportamento híbrido, sua largura ocupa apenas o tamanho do conteúdo elemento, mas ficam um abaixo do
+            outro.
+            <br>
+            Exemplo:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;display: inline-block&gt;
+        </p>
+        <br>
+      
+        <p>Exemplo:</p>
+
+
+        <div id="lista">
+            <ul id="lista-desordenada">
+                <li id="item-lista-primeiro">Primeiro</li>
+                <li id="item-lista-segundo">Segundo</li>
+                <li id="item-lista-terceiro">Terceiro</li>
+            </ul>
+        </div>
+
+
+    </div>
+    <!--Fim elemento inline-block-->
+
+</body>
+
+</html>

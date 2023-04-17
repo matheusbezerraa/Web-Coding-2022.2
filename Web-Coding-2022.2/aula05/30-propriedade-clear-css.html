@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<meta charset="UTF-8">
+<title>Elementos flutuantes</title>
+<link rel="stylesheet" href="css/estilo2.css">
+<style>
+    #principal {
+        font: 16px Arial, Helvetica, sans-serif;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .conteudo {
+        background: blue;
+        border: 1px solid gray;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        float: left;
+    }
+
+    /*
+        .conteudo-float{
+            background:green;
+            border: 1px solid gray;
+            width: 150px;
+            height: 150px;
+            float: left;
+        }
+        */
+
+    .limpar {
+        /*
+                left, right, both, none
+            */
+        clear: left;
+    }
+
+    #exercicio {
+        font-size: 1.3em;
+        color: blue;
+    }
+</style>
+</head>
+
+<body>
+    <div id="principal">
+        <h1>Propriedade clear</h1>
+
+        <p>
+            A propriedade <em>clear</em> (limpar) do CSS especifica se um elemento qualquer
+            pode ter um elemento flutuante ao seu lado ou se esses elementos devem ser movidos
+            para a parte de baixo dele.
+        </p>
+
+        <hr>
+
+
+
+        <div>
+            <h2>Exemplo sem clear</h2>
+
+            <div class="conteudo">
+                Conteúdo 1
+            </div>
+
+            <div class="conteudo">
+                Conteúdo 2
+            </div>
+
+            <div class="conteudo">
+                Conteúdo 3
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis justo et arcu tincidunt,
+                vitae
+                lobortis ante malesuada. Proin semper ligula ut urna tristique, nec imperdiet enim interdum. Mauris at
+                elementum nisl. Donec at diam lectus. Phasellus condimentum auctor lacus. Nullam non mi et ligula
+                vulputate
+                gravida. Cras vel vulputate mi, vel facilisis urna. Mauris ullamcorper bibendum leo vitae dignissim.
+                Quisque
+                fringilla mattis mattis. Suspendisse eget ultricies ipsum, ac ultrices leo. Donec placerat nunc sed
+                lacus
+                efficitur elementum. Fusce neque orci, ullamcorper eu neque scelerisque, sodales rutrum dolor. Cras ut
+                fermentum purus. Quisque at aliquet tellus. Integer fringilla tellus urna, et mollis ipsum maximus
+                consequat.
+            </p>
+        </div>
+
+        <hr>
+
+        <br>
+
+        <div>
+            <h2 class="limpar">Exemplo com clear</h2>
+
+            <div class="conteudo">
+                Conteúdo 1
+            </div>
+
+            <div class="conteudo">
+                Conteúdo 2
+            </div>
+
+            <div class="conteudo">
+                Conteúdo 3
+            </div>
+
+            <p class="limpar">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis justo et arcu tincidunt,
+                vitae
+                lobortis ante malesuada. Proin semper ligula ut urna tristique, nec imperdiet enim interdum. Mauris at
+                elementum nisl. Donec at diam lectus. Phasellus condimentum auctor lacus. Nullam non mi et ligula
+                vulputate
+                gravida. Cras vel vulputate mi, vel facilisis urna. Mauris ullamcorper bibendum leo vitae dignissim.
+                Quisque
+                fringilla mattis mattis. Suspendisse eget ultricies ipsum, ac ultrices leo. Donec placerat nunc sed
+                lacus
+                efficitur elementum. Fusce neque orci, ullamcorper eu neque scelerisque, sodales rutrum dolor. Cras ut
+                fermentum purus. Quisque at aliquet tellus. Integer fringilla tellus urna, et mollis ipsum maximus
+                consequat.
+            </p>
+        </div>
+
+        <hr>
+        <br>
+
+        <div id="exercicio">
+            <p class="limpar">
+                <b>Exercício:</b> adicione uma nova página ao site do curso de ADS com notícias sobre a área de TI. Utilize
+                as propriedades float e clear para testar seus conhecimentos.
+            </p>
+        </div>
+    </div>
+
+
+    
+
+
+
+</body>
+
+</html>

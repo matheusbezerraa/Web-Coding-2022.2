@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formatação de links</title>
+    <style>
+        a:link {
+            color: #b9c941;
+        }
+
+        a:visited{
+            color: #c0c0c0;
+        }
+
+        a:hover{
+            color: #6d790f;
+        }
+
+        a:active{
+            color: #e4f371;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Diferente de outras tags como h1, p, e outras, os links possuem estados:
+
+        <ul>
+            <li><b>Links não visitados:</b> a:link </li>
+            <li><b>Links visitados:</b> a:visited </li>
+            <li><b>Links "hover":</b> a:hover </li>
+            <li><b>Links ativos:</b> a:active</li>
+        </ul>
+
+        <p>
+            Para formatar um link não visitado utilizamos o seletor:
+            <br>
+            <br>
+            <em>
+                a:link{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; Formatação <br>
+                }<br>
+            </em>
+
+        </p>
+
+        <p>
+            Para formatar um link já visitado utilizammos o seletor:
+            <br>
+            <br>
+            <em>
+                a:visited{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; Formatação <br>
+                }<br>
+            </em>
+
+        </p>
+
+        <p>
+            Para formatar um link em que o cursor do mouse está sobre ele (hover) utilizamos o seletor:
+            <br>
+            <br>
+            <em>
+                a:hover{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; Formatação <br>
+                }<br>
+            </em>
+
+        </p>
+
+        <p>
+            Para formatar um link ativo (clicado e segurado) utilizamos o seletor:
+            <br>
+            <br>
+            <em>
+                a:active{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; Formatação <br>
+                }<br>
+            </em>
+
+        </p>
+    </div>
+    <div>
+        <a href="https://www.google.com/">Google</a> |
+        <a href="https://www.w3schools.com/">w3schools</a> |
+        <a href="https://www.tecmundo.com.br/">Tecmundo</a>
+    </div>
+
+</body>
+
+</html>

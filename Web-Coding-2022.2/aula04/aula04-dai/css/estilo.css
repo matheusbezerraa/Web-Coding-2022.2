@@ -1,0 +1,27 @@
+#corpo{
+    font-size: 32px;
+}
+
+h1{
+    font-size: 0.75em;
+    font-family: helvetica, arial, sans-serif;
+    margin: 10px;
+}
+
+.texto, a{
+    font-size: 0.5em;
+    font-family:  helvetica, arial, sans-serif;
+    font-weight: 300;
+    margin: 10px;
+    text-align: justify;
+}
+
+#rodape{
+    font-size: 0.15em;
+    text-align: center;
+}
+
+.azul{
+    color: blue;
+}
+
